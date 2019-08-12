@@ -387,10 +387,12 @@ public class VSE extends JavaPlugin implements Listener {
 	
 	public static boolean isVive(Player p){
 		if(p == null) return false;
-			if(vivePlayers.containsKey(p.getUniqueId())){
-				return true;
-				//return vivePlayers.get(p.getUniqueId()).isVR();
-			}
+
+		if(vivePlayers.containsKey(p.getUniqueId())){
+			return true;
+			//return vivePlayers.get(p.getUniqueId()).isVR();
+		}
+		
 		return false;
 	}
 
